@@ -1,1 +1,4 @@
 # Secaucus-Hacks
+For young people melanoma is the most common type of cancer. Despite what seems like low incidence rates in underdeveloped counties, this is probably teling of poor cess to healthcare and information on melanoma. The issue with this is that melanoma and other cancer treatments strive off preventative measures and early treatment. Wihtout the knowledge of common types of cancer, it is harder to find and treat cancer earlier. This isnt only evident in cancer but in a multitude of other diseases like turberculosis and malaria.
+Story:
+You are a new hire at an hospital at your local area. Your job is to identify different diseases in your local area. Each level will start with information on the disease that paitents could have. Using information given to them prior, the player will have look at multiple paitents.
