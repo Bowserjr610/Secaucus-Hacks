@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bovwvxunj3rdu"]
+[gd_scene load_steps=7 format=3 uid="uid://bovwvxunj3rdu"]
 
 [ext_resource type="Texture2D" uid="uid://bgpsdra27xfkx" path="res://Assets/Finished Whiteboard.png" id="1_xydgc"]
 [ext_resource type="Texture2D" uid="uid://bkbi8i8tax13h" path="res://Assets/African-medical-doctor-man-isolated-on-transparent-background-PNG-removebg-preview.png" id="2_x0o5c"]
+[ext_resource type="Script" path="res://Scripts/Textbox.gd" id="3_4pb42"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wewn6"]
 texture = ExtResource("1_xydgc")
@@ -3517,35 +3518,36 @@ layer_0/tile_data = PackedInt32Array(-1310761, 0, 0, -1245225, 0, 1, -1179689, 0
 position = Vector2(-310, 134)
 texture = ExtResource("2_x0o5c")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="Textbox" type="CanvasLayer" parent="."]
 offset = Vector2(575, 350)
 transform = Transform2D(1, 0, 0, 1, 575, 350)
+script = ExtResource("3_4pb42")
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+[node name="TextboxContainer" type="MarginContainer" parent="Textbox"]
 offset_left = -122.0
 offset_top = -188.0
 offset_right = 462.0
 offset_bottom = 29.0
 
-[node name="Panel" type="Panel" parent="CanvasLayer/MarginContainer"]
+[node name="Panel" type="Panel" parent="Textbox/TextboxContainer"]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_anuu6")
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/MarginContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="Textbox/TextboxContainer"]
 layout_mode = 2
 
-[node name="Panel" type="Panel" parent="CanvasLayer/MarginContainer/MarginContainer"]
+[node name="Panel" type="Panel" parent="Textbox/TextboxContainer/MarginContainer"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Textbox/TextboxContainer/MarginContainer"]
 layout_mode = 2
 
-[node name="Start" type="Label" parent="CanvasLayer/MarginContainer/MarginContainer/HBoxContainer"]
+[node name="Start" type="Label" parent="Textbox/TextboxContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 1
 text = "*"
 
-[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/MarginContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="Textbox/TextboxContainer/MarginContainer/HBoxContainer"]
 custom_minimum_size = Vector2(5, 5)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -3554,7 +3556,7 @@ text = "Placeholder text ..nt teyten wtiewt gtwnek twhetggggun twehwt htwet hg"
 autowrap_mode = 2
 clip_text = true
 
-[node name="End" type="Label" parent="CanvasLayer/MarginContainer/MarginContainer/HBoxContainer"]
+[node name="End" type="Label" parent="Textbox/TextboxContainer/MarginContainer/HBoxContainer"]
 custom_minimum_size = Vector2(5, 5)
 layout_mode = 2
 size_flags_vertical = 8

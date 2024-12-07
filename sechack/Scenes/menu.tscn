@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://egdw7xcxr6ks"]
 
-[ext_resource type="Script" path="res://menu.gd" id="1_a1gbl"]
+[ext_resource type="Script" path="res://Scripts/menu.gd" id="1_a1gbl"]
 [ext_resource type="Texture2D" uid="uid://ck8x2cjp1aqqn" path="res://Assets/eed8191a10a1a2beb74a3526a2d2344d.jpg" id="2_egd11"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_stpdf"]
